@@ -1,0 +1,77 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 1fr;
+  border: 1px solid red;
+  grid-template-rows: 70px 90px 110px;
+  /* 1fr - это одно свободное пространство */
+}
+div > div:nth-child(odd) {
+  background: #666;
+  font-size: 25px;
+  text-align: center;
+}
+div > div:nth-child(even) {
+  font-size: 25px;
+  text-align: center;
+} 
+.grid_item {
+  
+}
+.item1 {
+}
+.item2 {
+}
+.item3 {
+}
+.item4 {
+}
+.item5 {
+}
+.item6 {
+}
+.item7 {
+}
+.item8 {
+}
+.item9 {
+}
+.grid_container_2 {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  border: 2px solid rgb(189, 194, 35);
+}
+.grid_item_2 {
+}
+.item1 {
+}
+.item2 {
+}
+.item3 {
+}
+.item4 {
+}
+.item5 {
+}
+.item6 {
+}
+.grid_container_3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border: 3px solid rgb(62, 207, 25);
+  /* auto-fit - когда при сужении экрана минимальная ширина достигает указанной в minmax in px,
+  то строка переходит на новую строку  */
+}
+.grid_item_3 {
+}
+.item1 {
+}
+.item2 {
+}
+.item3 {
+}
+.item4 {
+}
+.item5 {
+}
+.item6 {
+}
