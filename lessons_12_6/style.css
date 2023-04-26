@@ -1,0 +1,180 @@
+/* Выравнивание картинки: 1 (первый способ)  */
+h1 {
+  text-align: center;
+}
+.icon {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  background-color: #c67a7a;
+  width: 500px;
+  margin: 0 auto;
+}
+.icon2 {
+  display: block;
+  margin: 0 0 0 auto;
+}
+.container2 {
+  background-color: #c67a7a;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.icon3 {
+  display: block;
+  /* margin: auto 0 0 0; */
+}
+.container3 {
+  background-color: #c67a7a;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* Выравнивание картинки: 2 (второй способ)  */
+.container2_1 {
+  text-align: center;
+  background-color: #c67a7a;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* Выравнивание картинки: 3 (третий способ)  */
+.container3_1 {
+  display: flex;
+  justify-content: center;
+  background-color: #c67a7a;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* Выравнивание несколько картинок:  */
+.icon4_1 {
+  align-self: center;
+}
+.icon__2 {
+  margin-top: 20px;
+}
+.container4_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #c67a7a;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* Выравнивание одного элемента внутри другого: */
+.head {
+  display: flex;
+  place-content: center;
+  /* justify-content: center;
+  align-content: center; */
+}
+h3 {
+  text-align: center;
+}
+.parent {
+  width: 200px;
+  height: 200px;
+  background: #000;
+}
+.child {
+  width: 80px;
+  height: 80px;
+  background: #929208;
+}
+/* Метод № 1: */
+.p1 {
+  position: relative;
+}
+.c1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Метод № 2: */
+.p2 {
+  position: relative;
+}
+.c2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/* Метод № 3: */
+.p3 {
+  position: relative;
+}
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* Метод № 4: */
+.p4 {
+  position: relative;
+}
+.c4 {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+/* Метод № 5: */
+.p5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Метод № 6: */
+.p6 {
+  display: flex;
+  justify-content: center;
+}
+.c6 {
+  align-self: center;
+}
+/* Метод № 7: */
+.p7 {
+  display: flex;
+}
+.c7 {
+  margin: auto;
+}
+/* Метод № 8: */
+.p8 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+/* Метод № 9: */
+.p9 {
+  display: grid;
+  place-items: center;
+}
+/* Метод № 10: */
+.p10 {
+  display: grid;
+}
+.c10 {
+  align-self: center;
+  justify-self: center;
+}
+/* Метод № 11: */
+.p11 {
+  display: grid;
+}
+.c11 {
+  place-self: center;
+}
+/* Метод № 12: */
+.p12 {
+  display: grid;
+}
+.c12 {
+  margin: auto;
+}
