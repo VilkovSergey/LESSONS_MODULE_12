@@ -4,6 +4,9 @@
     background-repeat: repeat-x;
     animation: slide 10s linear infinite;
 }
+.container {
+    color: white;
+}
 
 @keyframes slide {
     0% {
