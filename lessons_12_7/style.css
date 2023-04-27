@@ -1,0 +1,31 @@
+:root {
+  --color1: red;
+  --color2: black;
+  --color3: rgb(60, 178, 39);
+  --size: 300px;
+}
+.box1 {
+  height: var(--size, 100px);
+  background-color: var(--color1, rgb(38, 155, 100));
+}
+.box2 {
+  height: var(--size, 100px);
+  background-color: var(--color2, rgb(67, 163, 29));
+  margin-top: 20px;
+}
+.container {
+background-color: var(--color3);
+border: 3px solid red;
+margin-top: 20px;
+}
+.elem {
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: white;
+  border: 3px solid rgb(93, 201, 51);
+  background-color: #555;
+  margin: 0 auto;
+  width: calc(100% - 80px);
+  height: calc(var(--size) - 100px);
+}
